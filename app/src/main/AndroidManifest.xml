@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    PROTOTIPO ACADEMICO — Carteirinha Estudantil Ficticia
+    Este app nao solicita permissoes de armazenamento: a foto e escolhida
+    atraves do seletor de imagens do proprio sistema (Storage Access
+    Framework), e todos os dados ficam salvos localmente no dispositivo
+    (DataStore), sem qualquer comunicacao com servidores externos.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.CarteirinhaAcademica"
+        android:usesCleartextTraffic="false">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.CarteirinhaAcademica">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
