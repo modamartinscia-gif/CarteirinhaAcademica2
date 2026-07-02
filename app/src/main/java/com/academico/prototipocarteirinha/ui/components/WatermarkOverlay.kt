@@ -7,20 +7,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.drawscope.rotate
 import androidx.compose.ui.graphics.nativeCanvas
+import androidx.compose.ui.graphics.toArgb
 
-/**
- * PROTOTIPO ACADEMICO — Marca d'agua OBRIGATORIA e FIXA.
- *
- * Este componente e desenhado por cima de QUALQUER carteirinha gerada pelo
- * app, de forma diagonal e repetida, cobrindo toda a area do cartao.
- *
- * IMPORTANTE (design intencional):
- * - Este texto e uma constante de codigo, NAO um valor configuravel.
- * - A tela de Configuracoes (SettingsScreen) NAO possui nenhuma opcao para
- *   ocultar, remover, redimensionar ou tornar esta marca d'agua transparente.
- * - Ela existe justamente para impedir que a simulacao seja confundida com
- *   um documento real, atendendo ao requisito do protótipo academico.
- */
 private const val TEXTO_MARCA_DAGUA = "PROTOTIPO ACADEMICO — SEM VALIDADE LEGAL"
 
 @Composable
